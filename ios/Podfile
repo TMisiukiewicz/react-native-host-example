@@ -2,19 +2,17 @@ require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
-platform :ios, min_ios_version_supported
+platform :ios, '13.0'
 prepare_react_native_project!
 
-target 'ReactNativeHostExample' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
-
+target 'ReactNativeHostExample' do  
+  #use_frameworks!
   # Pods for ReactNativeHostExample
   config = use_native_modules!
-
+  
   # Flags change depending on the env values.
   flags = get_default_flags()
-
+  
   use_react_native!(
     :path => config[:reactNativePath],
     # Hermes is now enabled by default. Disable by setting this flag to false.

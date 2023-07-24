@@ -9,6 +9,7 @@ import UIKit
 import React
 
 class ViewController: UIViewController {
+    private lazy var reactInstance = ReactInstance()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,9 +17,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func handleReactNative(_ sender: UIButton) {
-        let jsLocation = RCTBundleURLProvider.sharedSettings().jsBundleURL(forBundleRoot: "index") { nil }
-        let rootView = RCTRootView(bundleURL: jsLocation!, moduleName: "ReactNativeScreen", initialProperties: nil, launchOptions: nil)
-                
+        reactInstance.initReact() {}
+        let host = reactInstance.host
+        let rootView = host?.view(
+            moduleName: "ReactNativeScreen",
+            initialProperties: nil
+        )
+                        
         let viewController = UIViewController()
         viewController.view = rootView
 

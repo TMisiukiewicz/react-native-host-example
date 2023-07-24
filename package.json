@@ -11,5 +11,8 @@
   "dependencies": {
     "react": "18.2.0",
     "react-native": "^0.71.0"
+  },
+  "devDependencies": {
+    "@rnx-kit/react-native-host": "^0.2.8"
   }
 }

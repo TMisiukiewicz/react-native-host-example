@@ -5,10 +5,8 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 platform :ios, '13.0'
 prepare_react_native_project!
 
-target 'ReactNativeHostExample' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  # use_frameworks!
-
+target 'ReactNativeHostExample' do  
+  #use_frameworks!
   # Pods for ReactNativeHostExample
   config = use_native_modules!
   

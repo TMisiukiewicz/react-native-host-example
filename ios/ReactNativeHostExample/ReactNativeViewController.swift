@@ -18,9 +18,8 @@ class ReactNativeViewController: UIViewController {
     }
 
     override func viewDidLoad() {
-        if let bridge = BridgeManager.shared.bridge {
-            self.view = RCTRootView(
-                bridge: bridge,
+        if let host = BridgeManager.shared.host {
+            self.view = host.view(
                 moduleName: "ReactNativeScreen",
                 initialProperties: nil
             )

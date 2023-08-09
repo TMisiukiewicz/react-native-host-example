@@ -7,18 +7,19 @@
 
 import Foundation
 import React
+import ReactNativeHost
   
 class BridgeManager: NSObject {
     static let shared = BridgeManager()
   
-    var bridge: RCTBridge?
+    var host: ReactNativeHost?
   
     public func loadReactNative(launchOptions: [AnyHashable: Any]?) {
-        bridge = RCTBridge(delegate: self, launchOptions: launchOptions)
+        host = ReactNativeHost(self)
     }
 }
   
-extension BridgeManager: RCTBridgeDelegate {
+extension BridgeManager: RNXHostConfig {
     func sourceURL(for bridge: RCTBridge!) -> URL! {
         #if DEBUG
           return RCTBundleURLProvider.sharedSettings().jsBundleURL(forBundleRoot: "index")
@@ -26,4 +27,5 @@ extension BridgeManager: RCTBridgeDelegate {
             return NSBundle.main.url(forResource: "main", withExtension: "jsbundle")
         #endif
     }
+    
 }

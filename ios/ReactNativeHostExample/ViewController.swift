@@ -16,13 +16,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func handleReactNative(_ sender: UIButton) {
-        let jsLocation = RCTBundleURLProvider.sharedSettings().jsBundleURL(forBundleRoot: "index") { nil }
-        let rootView = RCTRootView(bundleURL: jsLocation!, moduleName: "ReactNativeScreen", initialProperties: nil, launchOptions: nil)
-                
-        let viewController = UIViewController()
-        viewController.view = rootView
+        let reactNativeViewController = ReactNativeViewController()
 
-        self.present(viewController, animated: true, completion: nil)
+        self.present(reactNativeViewController, animated: true)
     }
 }
 

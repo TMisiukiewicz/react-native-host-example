@@ -14,6 +14,8 @@
 		98C7E3892A695C5B00AA82B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C7E3872A695C5B00AA82B1 /* Main.storyboard */; };
 		98C7E38B2A695C5D00AA82B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98C7E38A2A695C5D00AA82B1 /* Assets.xcassets */; };
 		98C7E38E2A695C5D00AA82B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C7E38C2A695C5D00AA82B1 /* LaunchScreen.storyboard */; };
+		98F127932A8378BD0031CD42 /* BridgeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F127922A8378BD0031CD42 /* BridgeManager.swift */; };
+		98F127952A83798B0031CD42 /* ReactNativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F127942A83798B0031CD42 /* ReactNativeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		98C7E38A2A695C5D00AA82B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98C7E38D2A695C5D00AA82B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98C7E38F2A695C5D00AA82B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98F127922A8378BD0031CD42 /* BridgeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeManager.swift; sourceTree = "<group>"; };
+		98F127942A83798B0031CD42 /* ReactNativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactNativeViewController.swift; sourceTree = "<group>"; };
 		9A8635F124F6E0B577FE5572 /* Pods_ReactNativeHostExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactNativeHostExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -48,7 +52,6 @@
 				0FC92678DF95247F1A644A98 /* Pods-ReactNativeHostExample.debug.xcconfig */,
 				649AE2E4BD878D34C3DF2F3D /* Pods-ReactNativeHostExample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -76,10 +79,12 @@
 				98C7E3812A695C5B00AA82B1 /* AppDelegate.swift */,
 				98C7E3832A695C5B00AA82B1 /* SceneDelegate.swift */,
 				98C7E3852A695C5B00AA82B1 /* ViewController.swift */,
+				98F127942A83798B0031CD42 /* ReactNativeViewController.swift */,
 				98C7E3872A695C5B00AA82B1 /* Main.storyboard */,
 				98C7E38A2A695C5D00AA82B1 /* Assets.xcassets */,
 				98C7E38C2A695C5D00AA82B1 /* LaunchScreen.storyboard */,
 				98C7E38F2A695C5D00AA82B1 /* Info.plist */,
+				98F127922A8378BD0031CD42 /* BridgeManager.swift */,
 			);
 			path = ReactNativeHostExample;
 			sourceTree = "<group>";
@@ -208,7 +213,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				98C7E3862A695C5B00AA82B1 /* ViewController.swift in Sources */,
+				98F127952A83798B0031CD42 /* ReactNativeViewController.swift in Sources */,
 				98C7E3822A695C5B00AA82B1 /* AppDelegate.swift in Sources */,
+				98F127932A8378BD0031CD42 /* BridgeManager.swift in Sources */,
 				98C7E3842A695C5B00AA82B1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

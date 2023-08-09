@@ -7,19 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		53E47A2266943A7DF7426777 /* libPods-ReactNativeHostExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 267BC85F06456228CF6F2CB9 /* libPods-ReactNativeHostExample.a */; };
-		9861D7C92A6E863000891B4B /* ReactInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9861D7C82A6E863000891B4B /* ReactInstance.swift */; };
+		775ECF9212661ECFB3716CB8 /* libPods-ReactNativeHostExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD259C6CC1955F6F6CD222B /* libPods-ReactNativeHostExample.a */; };
 		98C7E3822A695C5B00AA82B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7E3812A695C5B00AA82B1 /* AppDelegate.swift */; };
 		98C7E3842A695C5B00AA82B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7E3832A695C5B00AA82B1 /* SceneDelegate.swift */; };
 		98C7E3862A695C5B00AA82B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C7E3852A695C5B00AA82B1 /* ViewController.swift */; };
 		98C7E3892A695C5B00AA82B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C7E3872A695C5B00AA82B1 /* Main.storyboard */; };
 		98C7E38B2A695C5D00AA82B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98C7E38A2A695C5D00AA82B1 /* Assets.xcassets */; };
 		98C7E38E2A695C5D00AA82B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C7E38C2A695C5D00AA82B1 /* LaunchScreen.storyboard */; };
+		98F127932A8378BD0031CD42 /* BridgeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F127922A8378BD0031CD42 /* BridgeManager.swift */; };
+		98F127952A83798B0031CD42 /* ReactNativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F127942A83798B0031CD42 /* ReactNativeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0FC92678DF95247F1A644A98 /* Pods-ReactNativeHostExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeHostExample.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeHostExample/Pods-ReactNativeHostExample.debug.xcconfig"; sourceTree = "<group>"; };
-		267BC85F06456228CF6F2CB9 /* libPods-ReactNativeHostExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeHostExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD259C6CC1955F6F6CD222B /* libPods-ReactNativeHostExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeHostExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		649AE2E4BD878D34C3DF2F3D /* Pods-ReactNativeHostExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeHostExample.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeHostExample/Pods-ReactNativeHostExample.release.xcconfig"; sourceTree = "<group>"; };
 		9861D7C82A6E863000891B4B /* ReactInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactInstance.swift; sourceTree = "<group>"; };
 		98C7E37E2A695C5B00AA82B1 /* ReactNativeHostExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativeHostExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +31,8 @@
 		98C7E38A2A695C5D00AA82B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98C7E38D2A695C5D00AA82B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98C7E38F2A695C5D00AA82B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98F127922A8378BD0031CD42 /* BridgeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeManager.swift; sourceTree = "<group>"; };
+		98F127942A83798B0031CD42 /* ReactNativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactNativeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53E47A2266943A7DF7426777 /* libPods-ReactNativeHostExample.a in Frameworks */,
+				775ECF9212661ECFB3716CB8 /* libPods-ReactNativeHostExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,10 +81,12 @@
 				98C7E3812A695C5B00AA82B1 /* AppDelegate.swift */,
 				98C7E3832A695C5B00AA82B1 /* SceneDelegate.swift */,
 				98C7E3852A695C5B00AA82B1 /* ViewController.swift */,
+				98F127942A83798B0031CD42 /* ReactNativeViewController.swift */,
 				98C7E3872A695C5B00AA82B1 /* Main.storyboard */,
 				98C7E38A2A695C5D00AA82B1 /* Assets.xcassets */,
 				98C7E38C2A695C5D00AA82B1 /* LaunchScreen.storyboard */,
 				98C7E38F2A695C5D00AA82B1 /* Info.plist */,
+				98F127922A8378BD0031CD42 /* BridgeManager.swift */,
 			);
 			path = ReactNativeHostExample;
 			sourceTree = "<group>";
@@ -89,7 +94,7 @@
 		E421B067A9EC1EEAE593A631 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				267BC85F06456228CF6F2CB9 /* libPods-ReactNativeHostExample.a */,
+				5DD259C6CC1955F6F6CD222B /* libPods-ReactNativeHostExample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -106,7 +111,7 @@
 				98C7E37B2A695C5B00AA82B1 /* Frameworks */,
 				98C7E37C2A695C5B00AA82B1 /* Resources */,
 				EE33B09FF995687764E8A838 /* [CP] Embed Pods Frameworks */,
-				2AA2023B70A09F19C3B3B10F /* [CP] Copy Pods Resources */,
+				99851A102610ECB01C191C63 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,7 +191,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2AA2023B70A09F19C3B3B10F /* [CP] Copy Pods Resources */ = {
+		99851A102610ECB01C191C63 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -228,8 +233,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				98C7E3862A695C5B00AA82B1 /* ViewController.swift in Sources */,
+				98F127952A83798B0031CD42 /* ReactNativeViewController.swift in Sources */,
 				98C7E3822A695C5B00AA82B1 /* AppDelegate.swift in Sources */,
-				9861D7C92A6E863000891B4B /* ReactInstance.swift in Sources */,
+				98F127932A8378BD0031CD42 /* BridgeManager.swift in Sources */,
 				98C7E3842A695C5B00AA82B1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
